@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume | Your Name</title>
+  <style>
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background: radial-gradient(900px 500px at 10% -10%, rgba(124,58,237,.25), transparent 55%),
+                  radial-gradient(900px 500px at 90% 0%, rgba(6,182,212,.20), transparent 55%),
+                  #070b14;
+      color:#eaf0ff;
+      padding: 28px 18px;
+    }
+    .wrap{ max-width: 860px; margin: 0 auto; }
+    .card{
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+      border-radius: 18px;
+      padding: 18px;
+      box-shadow: 0 18px 60px rgba(0,0,0,.35);
+    }
+    h1{ margin: 0 0 6px; letter-spacing:-0.02em; }
+    .sub{ color: rgba(234,240,255,.72); font-weight:700; margin-bottom: 14px; }
+    h2{ margin: 18px 0 8px; font-size: 16px; }
+    ul{ margin: 0; padding-left: 18px; color: rgba(234,240,255,.82); }
+    li{ margin: 6px 0; }
+    .row{ display:flex; gap: 14px; flex-wrap:wrap; color: rgba(234,240,255,.82); font-weight:650; font-size: 13px; }
+    .pill{ padding: 8px 10px; border: 1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.04); border-radius: 999px; }
+    a.btn{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(124,58,237,.55);
+      background: linear-gradient(135deg, rgba(124,58,237,.28), rgba(6,182,212,.16));
+      color: #fff;
+      font-weight:800;
+      margin-top: 14px;
+    }
+    .hint{ margin-top: 12px; color: rgba(234,240,255,.60); font-size: 13px; }
+    @media print{
+      body{ background:#fff; color:#111; }
+      .card{ box-shadow:none; border:1px solid #ddd; background:#fff; }
+      a.btn{ display:none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Your Name</h1>
+      <div class="sub">UI/UX Designer & Web Designer</div>
+
+      <div class="row" aria-label="Contact summary">
+        <span class="pill">Email: your-email@example.com</span>
+        <span class="pill">Phone: +91 90000 00000</span>
+        <span class="pill">LinkedIn: linkedin.com/in/your-profile</span>
+      </div>
+
+      <h2>Summary</h2>
+      <ul>
+        <li>Design user-first interfaces with clean spacing, modern typography, and accessible UX.</li>
+        <li>Build responsive pages and landing experiences using HTML/CSS and WordPress/Elementor.</li>
+        <li>Use Figma to create wireframes, high-fidelity designs, and prototypes.</li>
+      </ul>
+
+      <h2>Skills</h2>
+      <ul>
+        <li>UI Design, UX Research, Wireframing, Figma</li>
+        <li>Web Design, WordPress, HTML, CSS, Elementor</li>
+      </ul>
+
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>UI/UX Intern - BrightApps</strong> (2024 - 2025): onboarding + dashboard UX improvements.</li>
+        <li><strong>UI/UX Designer & Web Designer</strong> (2025 - Present): responsive web layouts and UI systems.</li>
+      </ul>
+
+      <a class="btn" href="javascript:window.print()">Print / Save as PDF</a>
+      <div class="hint">This is a placeholder resume page. Replace the content with your real resume details.</div>
+    </div>
+  </div>
+</body>
+</html>
+
