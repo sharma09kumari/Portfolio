@@ -910,3 +910,84 @@ main{
   -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
   mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 }
+
+
+/* --- EXPERIENCE TIMELINE STYLES --- */
+.timeline {
+  position: relative;
+  padding-left: 22px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: linear-gradient(180deg, rgba(124,58,237,.65), rgba(6,182,212,.35));
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -22px;
+  top: 6px;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.18);
+  box-shadow: 0 0 0 6px rgba(124,58,237,.14);
+}
+
+/* Active / Current Role Highlight */
+.timeline-item.current .timeline-dot {
+  box-shadow: 0 0 0 6px rgba(6,182,212,.14);
+  border-color: rgba(6,182,212,.35);
+  background: rgba(6,182,212,.6);
+}
+
+.timeline-content {
+  padding: 16px 16px 16px 12px;
+  border-radius: 18px;
+  background: rgba(255,255,255,.045);
+  border: 1px solid rgba(255,255,255,.10);
+  transition: transform .18s ease, border-color .18s ease, background .18s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-2px);
+  border-color: rgba(6,182,212,.35);
+  background: rgba(255,255,255,.06);
+}
+
+.timeline-content h3 {
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+}
+
+.timeline-meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  color: var(--muted2);
+  font-weight: 650;
+  font-size: 13px;
+}
+
+.timeline-content p {
+  margin: 10px 0 0;
+  color: var(--muted);
+}
